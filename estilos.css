@@ -1,6 +1,6 @@
 body{
     /*background-color: cadetblue;*/
-    background-image: url(img/explo2.jpg);
+    background-image: url(img/explo1.jpg);
     background-attachment: fixed;
 }
 p {
@@ -11,7 +11,7 @@ p {
 .parrafo {
     font-size: 26px;
     font-family: 'Londrina Solid', cursive;
-    color: blue;
+    color: white;
 }
 .enfasis{
     font-size: 22px;
