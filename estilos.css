@@ -1,11 +1,20 @@
+body{
+    /*background-color: cadetblue;*/
+    background-image: url(img/explo2.jpg);
+    background-attachment: fixed;
+}
 p {
     font-size: 22px;
     font-family: 'Londrina Solid', cursive;
     color: red;
 }
 .parrafo {
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'Londrina Solid', cursive;
     color: blue;
-
+}
+.enfasis{
+    font-size: 22px;
+    font-family: 'Londrina Solid', cursive;
+    color: blanchedalmond;
 }
