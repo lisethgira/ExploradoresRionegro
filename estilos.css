@@ -3,15 +3,166 @@ body{
     background-image:url(img/bosque.jpg);
     background-attachment: fixed;
 }
-p {
-    font-size: 22px;
-    font-family: 'Londrina Solid', cursive;
-    color: red;
+h1{
+    font-family:'Pacifico';
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
 }
-.parrafo {
-    font-size: 26px;
+.banner{
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+/*--------------------Estilos del menu--------------------*/
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.navegacion{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    height: 80px;
+    z-index: 2000;
+    margin: auto;
+}
+.menu li{
+    flex-basis: 0;
+    flex-grow: 1; 
+    border-right: 1px solid darkred;
+    position: relative;
+}
+.menu li a{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    z-index: 2000;
+}
+.menu .imagen{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 0%;
+    z-index: 2000;
+    margin: auto;
+    
+    -webkit-transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+   -moz-transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+     -o-transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+        transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000); /* easeOutSine */
+
+-webkit-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+        transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000); /* easeOutSine */
+    
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+}
+.menu li a .text-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: darkred;
+    top:0;
+    position: absolute;
+    z-index: 5000;
+    margin: auto;
+    
+    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+   -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+     -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+.menu .primer-item{
+    border-left: 1px solid darkred;
+}
+.menu li a .down-item{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin: auto;
+    
+    -webkit-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+   -moz-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     -o-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+
+-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+.menu li:hover .down-item, .menu li:hover .text-item {
+    top: 100%;
+    height: 115%;
+    margin: auto;
+}
+.menu li:hover .imagen{
+    width: 100%;
+    right: 0px;
+    margin: auto;
+}
+.social-icon{
+    margin: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon__link{
+    color: blue;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.main-header__contactInfo__address{
+    background: darkred;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+h2,h3{
+    font-family: 'EB Garamond';
+    font-size: 25px;
+    text-align: left;
+}
+.parrafo, p {
+    font-size: 18px;
     font-family: 'Londrina Solid', cursive;
     color: white;
+    text-align: justify;
 }
 .enfasis{
     font-size: 22px;
@@ -20,7 +171,232 @@ p {
 }
 
 .caja1{
-    background-color: yellow;
-    width: 1000px;
-    padding: 1000px;
+    background-color: white;
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
+.video1{
+    background-color: aqua;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    display: block;
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    line-height: 1px ;
+}
+audio{
+    display: table;
+    margin: auto;
+}
+/*------------------------pagina 2----------*/
+.organigrama{
+    background-color: black;
+    padding: 5px;
+    width: 98%;
+    height: auto;
+    margin: auto;
+}
+.subp2{
+    color: black;
+    font-weight: bold;
+}
+.parrafop2{
+    font-style: italic;
+}
+.feria{
+    background-color: black;
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    display: block;   
+}
+
+/*-----------------------pagina 3------------*/
+.grupos1{
+    background-color: black;
+    padding: 5px;
+    width: 98%;
+    height: auto;
+    margin: auto;
+}
+.grupos{
+    width: 25%;
+    margin: auto;
+    height: auto;
+    display: block;
+}
+.parrafo3{
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 18px;
+}
+/*------------pagina 4---------*/
+.container{
+    max-width: 450px;
+    height: auto;
+    background-color: white;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+}
+.form_top{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem darkred;
+    margin-bottom: 1rem;
+}
+.form_top{
+    font-weight: bold;
+    color: #CAC8C8;
+    font-size: 18px;
+}
+.formulario{
+    background-color: darkred;
+    text-align: center;
+    color: white;
+}
+.form_reg{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.input, .btn_submit, .btn_reset{
+    background-color: #EFEFEF;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+}
+.input:focus{
+    border-bottom: solid darkred .2rem;
+}
+.btn_submit, .btn_reset{
+    width: 40%;
+    border-bottom: none;
+    background-color: darkred;
+    color: black;
+}
+.btn_reset{
+    background-color: darkred;
+}
+.btn_submit:hover{
+    background-color: grey;
+}
+.btn_reset:hover{
+    background-color: grey;
+}
+/*------------------------*/
+.lbl{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: gray;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .1s;
+}
+.lbl::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 100px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    transition: .1s;
+}
+#switch:checked + .lbl::after{
+    left: 36px;
+}
+#switch:checked + .lbl{
+    background: darkred;
+}
+#switch{
+    display: none;
+}
+/*-------------------login----------------*/
+.logo{
+    height: 100vh;
+    
+}
+.login_box{
+    width: 320px;
+    height: 420px;
+    background-color: white;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -10%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login_box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.login_box .sesion{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login_box .sesion1{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: block;
+}
+.login_box .sesion2{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login_box .sesion2[type="text"],
+.login_box .sesion2[type="Password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: darkred;
+    font-size: 16px;
+}
+.login_box .sesion2[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: darkred;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login_box .sesion3{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.login_box .sesion3:hover{
+    color: darkred;
 }
