@@ -28,6 +28,7 @@ ul{
     display: flex;
     justify-content: center;
     margin: auto;
+    padding-bottom: 0px;
 }
 .menu{
     width: 100%;
@@ -128,31 +129,24 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
     right: 0px;
     margin: auto;
 }
-.social-icon{
-    margin: 10px;
-    right: 10px;
+/*------icono face-----*/
+.red_social{
+    float: right;
+    width: 3%;
+    right: 3%;
+    background-color:transparent;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    padding-bottom: 0%;
 }
-.social-icon__link{
-    color: blue;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    width: 35px;
-    height: 35px;
-    background: white;
-    border-radius: 50%;
-    text-decoration: none;
-}
+/*-----contacto exploradores----*/    
 .main-header__contactInfo__address{
     background: darkred;
     color: white;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
 }
+/*----index----*/
 h2,h3{
     font-family: 'EB Garamond';
     font-size: 25px;
@@ -169,7 +163,6 @@ h2,h3{
     font-family: 'Londrina Solid', cursive;
     color: blanchedalmond;
 }
-
 .caja1{
     background-color: white;
     width: 95%;
@@ -184,6 +177,10 @@ h2,h3{
     margin: auto;
     display: block;
 }
+audio{
+    display: table;
+    margin: auto;
+}
 .footer{
     text-align: center;
     font-size: 15px;
@@ -191,11 +188,20 @@ h2,h3{
     font-weight: bolder;
     line-height: 1px ;
 }
-audio{
-    display: table;
-    margin: auto;
+.pie{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    position:absolute
 }
-/*------------------------pagina 2----------*/
+.pie1{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    margin-top:100%;        
+}
+/*-----------Organización---------*/
 .organigrama{
     background-color: black;
     padding: 5px;
@@ -217,8 +223,7 @@ audio{
     margin: auto;
     display: block;   
 }
-
-/*-----------------------pagina 3------------*/
+/*-------------grupos Exploradores------------*/
 .grupos1{
     background-color: black;
     padding: 5px;
@@ -237,7 +242,7 @@ audio{
     color: white;
     font-size: 18px;
 }
-/*------------pagina 4---------*/
+/*-----------Registro---------*/
 .container{
     max-width: 450px;
     height: auto;
@@ -299,7 +304,7 @@ audio{
 .btn_reset:hover{
     background-color: grey;
 }
-/*------------------------*/
+/*---------checkout---------------*/
 .lbl{
     display: inline-block;
     width: 65px;
@@ -331,7 +336,13 @@ audio{
 #switch{
     display: none;
 }
-/*-------------------login----------------*/
+/*-------------login----------------*/
+.inicio{
+    position: absolute;
+    margin-top: 200px; 
+    margin-left: 650px;
+    margin-bottom: 0px;
+}
 .logo{
     height: 100vh;
     
