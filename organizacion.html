@@ -7,63 +7,51 @@
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Pacifico&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <h1>Organigrama Exploradores de Rionegro</h1>
-    <div>
-            <p class="main-header__contactInfo__address column column--25">
-            <span>Rionegro, Antioquia | Exploradoresderionegro@gmail.com | 316 835 61 23 |
-            <a href="https://www.facebook.com/Exploradoresderionegro">
-            <img class ="red_social"src="img/iconface2.png"alt="facebook">
-            </a></div>
-            </p>
-    </div>
-    <nav class="navegacion">
-        <ul class="menu">
-            <li class="primer-item">
-                <a href="index.html">
-                    <img src="img/pin1.png" alt="" class="imagen">
-                    <span class="text-item">Inicio</span>
-                    <span class="down-item"></span>
-                </a>
-            </li>
-            <li>
-                <a href="organizacion.html">
-                    <img src="img/pin5.png" alt="" class="imagen">
-                    <span class="text-item">Organización</span>
-                    <span class="down-item"></span>
-                </a>
-            </li>
-            <li>
-                <a href="gruposExploradores.html">
-                    <img src="img/pin3.png" alt="" class="imagen">
-                    <span class="text-item">Grupos Exploradores</span>
-                    <span class="down-item"></span>
-                </a>
-            </li>
-            <li>
-                <a href="registro.html">
-                    <img src="img/pin10.png" alt="" class="imagen">
-                    <span class="text-item">Registro</span>
-                    <span class="down-item"></span>
-                </a>
-            </li>
-            <li>
-                <a href="login.html">
-                    <img src="img/pin9.png" alt="" class="imagen">
-                    <span class="text-item">Login</span>
-                    <span class="down-item"></span>
-                </a>
-            </li>
-        </ul>
-        <div><a href="https://www.facebook.com/Exploradoresderionegro" target="_blank" 
-            class="fa fa-facebook-square"> <span class="icon-facebook"></span></a></div>
-    </nav>
-        <hr>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">
+      <img class="logotipo" src="img/logo1.png">
+      </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="organizacion.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        ¿Quiénes somos?
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="organizacion.html">organización</a>
+          <a class="dropdown-item" href="gruposExploradores.html">Grupos exploradores</a>
+          <a class="dropdown-item" href="#">otro más</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://exploradoresderionegro.org/formacion/">Formación<span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="registro.html">Registro<span class="sr-only">(current)</span></a>
+      </li>
+     <li class="nav-item active">
+       <a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
+     </li>
+    </ul>
+  </div>
+</nav> 
     </header>
     <main>
-        <img src="img/organigrama.png" alt="organigrama" class="organigrama">
+      <img src="img/organigrama.png" alt="organigrama" class="organigrama">
+      <div class="container">
+      <div class="row">
+      <div class="col-12 col-md-12">
         <h2 class="subp2">Naturaleza</h2>
         <p><em>Esta es una Corporación cívica, sin ánimo de lucro, al servicio de la infancia, adolescencia, la juventud y la familia, de carácter educativo, no político, voluntario, abierto a todos sin distinción de clase social, raza o credo, con el propósito, principios y métodos concebidos por los Exploradores de Rionegro, siguiendo la tradición de LORD BADEN POWEL OF GILWELL, fundador del Escultismo a nivel mundial hace más de 110 años.</em></p>
         <h2 class="subp2">Territorio</h2>
@@ -96,15 +84,51 @@
         <br>g. El Explorador se honra de su fe y le somete su vida.
         <br>h. El Explorador es hijo de la patria y buen ciudadano.
         <br>i. El deber de un Explorador comienza en su hogar</p>
+        <section class= banner-video>        
         <h2>100 años de Escultismo en Antioquia</h2>
+        <img class="play" src="img/Flordelis.svg" alt=play>
         <video src="mp4/feria.mp4" alt="feria" class="feria" controls></video>
+        </section>
         <h2>Entrevista</h2>
         <audio src="mp3/entrevista.mp3" alt="entrevista" class="entrevista" controls></audio>
+      </div>
+      </div>
+      </div>
     </main>
-    <footer class="pie"> 
-        <hr>
-        <p class="footer"> &copy;Liseth Arelis Giraldo Morales | Rionego - Antioquia | 2020</p> 
-        <p class="footer">&#9993;lisethgiraldo628@gmail.com</p>
+    <footer> 
+        <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6" class ="footer-dark bg-dark">
+            <h6 class="text-muted lead">CONTACTO:</h6>
+            <h6 class="text-muted">
+            Calle 41C N° 57ª 58 <br>
+            Urbanización las Torres.<br>
+            Tel: 531 91 43 <br>
+            Celular: 311 600 93 41 – 300 781 97 14 <br>
+            Email: exploraodresderionegro@gmail.com <br>
+            </h6>
+        </div>
+        <div class="col-12 col-md-6">
+        <div class="pull-right">
+        <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+              <div class="redes-footer">
+                  <a href="https://www.facebook.com/Exploradoresderionegro"><i class="fab fa-facebook"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=573136450933&fbclid=IwAR0BOByOU6QKAlPZ33w0BbA6WNwObouaucimwWDfh5e0LabRdJvc7JM3srw"><i class="fab fa-whatsapp"></i></a>
+                  <a href="https//www.mail.google.com/exploradoresderionegro@gmail.com"><i class="far fa-envelope"></i></a>
+              </div>
+        </div>
+  </div>     
+</div>
+ <div class="row"> 
+     <div class = "col-12 col-md-12" class="footer-dark bg-dark" class="content-center">
+     <p class="text-center">© Copyright: Liseth Arelis Giraldo Morales | Rionego - Antioquia | 2020</p>
+     <p class="text-center">lisethgiraldo628@gmial.com</p></div>
+    </div>
+    </div>      
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/9bf67fe894.js" crossorigin="anonymous"></script>
 </body>
 </html>

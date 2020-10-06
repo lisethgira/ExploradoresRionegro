@@ -1,6 +1,7 @@
+@charset "UTF-8";
+    
 body{
-    /*background-color: cadetblue;*/
-    background-image:url(img/bosque.jpg);
+    background-color: white;
     background-attachment: fixed;
 }
 h1{
@@ -9,142 +10,25 @@ h1{
     text-align: center;
     font-weight: bold;
 }
-.banner{
-    background-color: aqua;
-    width: 100%;
-    height: auto;
-    margin: auto;
+.logotipo{
+    width:100px;
+    height:100px; 
 }
-/*--------------------Estilos del menu--------------------*/
-a{
-    text-decoration: none;
+
+.banner-vídeo{
+    background-image:url(img/cuarentena.jpg);
+    padding: 200px 0;
+    position:relative;
+    text-align: center;       
 }
-ul{
-    list-style: none;
-}
-.navegacion{
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-bottom: 0px;
-}
-.menu{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    height: 80px;
-    z-index: 2000;
-    margin: auto;
-}
-.menu li{
-    flex-basis: 0;
-    flex-grow: 1; 
-    border-right: 1px solid darkred;
+.banner-vídeo{
+    width: 80px;
+    height:80px;
     position: relative;
 }
-.menu li a{
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    z-index: 2000;
-}
-.menu .imagen{
-    position: absolute;
-    bottom: 0;
-    right: 0px;
-    width: 0%;
-    z-index: 2000;
-    margin: auto;
+.container{
+    background: transparent;
     
-    -webkit-transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-   -moz-transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-     -o-transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-        transition: all 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000); /* easeOutSine */
-
--webkit-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
-   -moz-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
-     -o-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
-        transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000); /* easeOutSine */
-    
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
-}
-.menu li a .text-item{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: darkred;
-    top:0;
-    position: absolute;
-    z-index: 5000;
-    margin: auto;
-    
-    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
--webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
-
--webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
--webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-   -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-     -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
-}
-.menu .primer-item{
-    border-left: 1px solid darkred;
-}
-.menu li a .down-item{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    margin: auto;
-    
-    -webkit-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
-   -moz-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
-     -o-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
-
--webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-   -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-     -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
-}
-.menu li:hover .down-item, .menu li:hover .text-item {
-    top: 100%;
-    height: 115%;
-    margin: auto;
-}
-.menu li:hover .imagen{
-    width: 100%;
-    right: 0px;
-    margin: auto;
-}
-/*------icono face-----*/
-.red_social{
-    float: right;
-    width: 3%;
-    right: 3%;
-    background-color:transparent;
-    margin: 0 auto;
-    display: flex;
-    padding-bottom: 0%;
-}
-/*-----contacto exploradores----*/    
-.main-header__contactInfo__address{
-    background: darkred;
-    color: white;
-    margin: 0 auto;
-    padding: 15px;
 }
 /*----index----*/
 h2,h3{
@@ -155,7 +39,7 @@ h2,h3{
 .parrafo, p {
     font-size: 18px;
     font-family: 'Londrina Solid', cursive;
-    color: white;
+    color: black;
     text-align: justify;
 }
 .enfasis{
@@ -181,31 +65,35 @@ audio{
     display: table;
     margin: auto;
 }
-.footer{
-    text-align: center;
-    font-size: 15px;
-    color: black;
-    font-weight: bolder;
-    line-height: 1px ;
+/*------------pie de página-----*/
+footer {
+	background-color:#1A1A1A;
+	height: 50%;
+  color: white;
+  padding: 15px;
 }
-.pie{
-    background-color: red;
-    width: 100%;
-    height: 50px;
-    position:absolute
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
 }
-.pie1{
-    background-color: red;
-    width: 100%;
-    height: 50px;
-    display: inline-block;
-    margin-top:100%;        
+
+a img:hover {
+    color: #fff;
 }
+
+/*------------iconos redes-----*/
+
+.redes-footer{
+    font-size: 40px;
+}
+
+
 /*-----------Organización---------*/
 .organigrama{
     background-color: black;
     padding: 5px;
-    width: 98%;
+    width: 100%;
     height: auto;
     margin: auto;
 }
@@ -337,77 +225,63 @@ audio{
     display: none;
 }
 /*-------------login----------------*/
-.inicio{
-    position: absolute;
-    margin-top: 200px; 
-    margin-left: 650px;
-    margin-bottom: 0px;
-}
-.logo{
-    height: 100vh;
-    
-}
-.login_box{
-    width: 320px;
-    height: 420px;
-    background-color: white;
-    color: black;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -10%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
-.login_box .avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-.login_box .sesion{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-.login_box .sesion1{
+.main-section{
+    margin:0 auto;
+    margin-top:25%;
     padding: 0;
-    margin: 0;
-    font-weight: bold;
-    display: block;
 }
-.login_box .sesion2{
-    width: 100%;
-    margin-bottom: 20px;
+
+.modal-content{
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
 }
-.login_box .sesion2[type="text"],
-.login_box .sesion2[type="Password"]{
-    border: none;
-    border-bottom: 1px solid white;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: darkred;
-    font-size: 16px;
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
 }
-.login_box .sesion2[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: darkred;
-    color: white;
+
+.user-img img{
+    width: 100xp;
+    height: 100px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}
+
+.form-group input{
+    height: 42px;
     font-size: 18px;
-    border-radius: 20px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
 }
-.login_box .sesion3{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top:4px;
 }
-.login_box .sesion3:hover{
-    color: darkred;
+
+.form-group#user-group::before{
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f023";
+}
+
+a{
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot{
+    padding: 5px 0;
+}
+
+.forgot a{
+    color: white;
 }
