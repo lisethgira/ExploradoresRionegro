@@ -46,18 +46,9 @@
     </ul>
   </div>
 </nav>
-    <!----<Form>
-        <input type="text" value="andrés montoya" name="nombreusuario" id="nombreusuario">
-        <input type="password" placeholder="contraseña" name="paswordusuario" id="paswordusuario">
-        <label for="cedulaUsuario"></label>
-        <input type="email" name="" id="">
-        <input type="number" name="cedulaUsuario" id="cedulaUsuario">
-        <input type="radio" name="" id="">
-        <input type="submit" value="">
-    </Form>--->
-     </header>
+       </header>
         <main>
-             <h2>Bienvenidos</h2>
+             <h1>Bienvenidos</h1>
              <div class="container">
               <div class="row">
               <div class="col 12 col-md-12">
@@ -67,21 +58,30 @@
               </div>
              </div>
             <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-12">
                 <div class="form_top">
-                    <h2 class="formulario">Formulario <span>Registro</span></h2>
+                    <h2 class="formulario">Formulario <span> Registro</span></h2>
                 </div>
-                <form class="form_reg" action="">
-                    <input class="input" type="text" placeholder="&#128100; Nombre" required autofocus>
-                    <input class="input" type="email" placeholder="&#9993; E-mail" required autofocus>
-                    <input class="input" type="text" placeholder="&#128274; Contraseña" required autofocus>
-                    <input class="input" type="telefono" placeholder="&#128222; Teléfono" required autofocus>
-                    <input class="input" type="text" placeholder="&#8962; Dirección" required autofocus>
+                <form class="form_reg" action="" id="formulario">
+                    <input class="input" type="text"  id="nombre"placeholder="&#128100; Nombre" autofocus required>
+                    <div class="" id="noNombre"></div>
+                    <input class="input" type="email" id="correo"placeholder="&#9993; E-mail" autofocus required>
+                    <div class="" id="noCorreo"></div>
+                    <input class="input" type="password" id="contrasena"placeholder="&#128274; Contraseña" autofocus required>
+                    <div class="" id="noContrasena"></div>
+                    <input class="input" type="number" id="telefono"placeholder="&#128222; Teléfono"autofocus required>
+                    <div class="" id="noTelefono"></div>
+                    <input class="input" type="text" id="direccion"placeholder="&#8962; Dirección" autofocus required >
+                    <div class="" id="noDireccion"></div>
                 <div class="btn_form">
-                    <input class="btn_submit" type="submit" value="REGISTRAR">
-                    <input class="btn_reset" type="reset" value="LIMPIAR">
+                    <input class="btn_submit" type="submit" value="REGISTRAR" id="registrar">
+                    <input class="btn_reset" type="reset" value="LIMPIAR" id="limpiar">
                 </div>
                 </form>
-            </div>
+                </div>
+              </div>
+           </div>
             <div class="container">
               <div class="row">
               <div class="col 12 col-md-12">
@@ -278,6 +278,7 @@
     </div>
     </div>      
         </footer>
+    <script src="controlador1.js"></script>    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
